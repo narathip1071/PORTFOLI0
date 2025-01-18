@@ -201,7 +201,7 @@ button:hover {
     
 }
 
-@media (max-width: 810px){
+@media (max-width: 820px){
     .checkbtn{
         display: block;
     }
