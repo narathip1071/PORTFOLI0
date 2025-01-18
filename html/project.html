@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+    
+    <link rel="stylesheet"  href="/css/project.css">
+    <script src="https://kit.fontawesome.com/adef422090.js" crossorigin="anonymous"></script> <!-- เรียกใช้ icon  -->
+    <title>Works</title>
+    <title>Slick Slider</title>
+    <link rel="stylesheet" href="/slick-slider-master/css/style.css">
+    <link rel="stylesheet" href="/slick-slider-master/css/slick.css">
+    
+</head>
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">PORTFOLIO</label>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="active">WORKS</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <!-- <li><a href="Travel.html">Project</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li>
+              <div class="language-switch">
+                  <button onclick="setLanguage('en')">EN</button>
+                  <button onclick="setLanguage('th')">TH</button>
+              </div>
+          </li> -->
+      </ul>
+    </nav>
+    <div class="minibar">
+      <div class="minibar-con">
+        <!-- <a href="#designpage"> <div class="boxbar" id="designpage">DESIGN</div></a> -->
+         <!-- <a href="#eventpage"> <div class="boxbar">PM EVENT</div></a>  -->
+          <!-- <div class="boxbar">STICKER</div> -->
+          <!-- <div class="boxbar">CONTENT</div> -->
+        <!-- <a href="Travel.html"><div class="boxbar">TRAVEL</div></a> -->
+      </div>
+    </div>
+
+    <script>
+      // Select all elements with class "box"
+      const boxes = document.querySelectorAll('.boxbar');
+    
+      // Add click event listener to each box
+      boxes.forEach((box) => {
+        box.addEventListener('click', () => {
+          // Toggle the "active" class on the clicked box
+          box.classList.toggle('active');
+        });
+      });
+      boxes.forEach((box) => {
+      box.addEventListener('click', () => {
+        // ลบคลาส active ออกจากกล่องทั้งหมด
+        boxes.forEach((b) => b.classList.remove('active'));
+        // เพิ่มคลาส active ให้กับกล่องที่ถูกกด
+        box.classList.add('active');
+      });
+    });
+    </script>
+  </header>
+  <main>    
+    <section class="title1">
+      <div class="container">
+        <div class="info-con">
+          <div class="info">
+            <h3>Program Design</h3>
+            
+            <!-- พิมพ์ lerom50 กด enter จะเป็นการจำลองคำ 50 คำ-->
+          </div>
+        </div>
+
+        <div class="blog-con">
+          <div class="blog-item"> 
+            <h2>ADHD Therapy</h2>
+            <p id="description1">A program called ADHD Therapy has been developed for therapists treating children with Attention Deficit Hyperactivity Disorder (ADHD) aged 8 to 12 years. The program is designed to record information about therapists and the children undergoing therapy. The UI (User Interface) design of the ADHD Therapy program focuses on simplicity, clarity, and functionality to support the recording of information about children with ADHD, as well as the efficient and systematic management of essential data in an organized manner.</p>  
+            <!-- โปรแกรมที่ชื่อว่า ADHD Therapy ได้รับการพัฒนาขึ้นสำหรับนักบำบัดที่รักษาเด็กที่มีภาวะสมาธิสั้น (ADHD) อายุระหว่าง 8 ถึง 12 ปี โปรแกรมนี้ออกแบบมาเพื่อบันทึกข้อมูลเกี่ยวกับนักบำบัดและเด็กที่ได้รับการบำบัด การออกแบบ UI (User Interface) ของโปรแกรม ADHD Therapy มุ่งเน้นที่ความเรียบง่าย ความชัดเจน และฟังก์ชันการใช้งาน เพื่อสนับสนุนการบันทึกข้อมูลเกี่ยวกับเด็กที่มีภาวะสมาธิสั้น รวมถึงการจัดการข้อมูลที่สำคัญได้อย่างมีประสิทธิภาพในรูปแบบที่เป็นระบบและเป็นระเบียบ -->
+            <img src="/img/therapy.png" alt=""><br>
+          </div> 
+        </div>
+        <div class="blog-con">
+          <div class="blog-item"><br>
+            <h2>AR Anatomy</h2>
+            <p id="description2">This program has been developed and designed for learning Anatomy, with a focus on three user interfaces that prioritize clarity 
+            and simplicity to prevent user errors. It is also designed to heavily emphasize the use of Augmented Reality (AR). The chosen colors
+             aim to provide a comfortable and non-fatiguing viewing experience. Both the UI design and the AR 
+            implementation should be carefully crafted to enhance the program's usability and its effectiveness as a learning tool for Anatomy, aligning with the program's objectives.</p><br>
+            <img src="/img/anatomy.png" alt=""><br>
+           <iframe width="600" height="355" src="https://www.youtube.com/embed/dwOZmJwbCHQ?si=WIsO7nvy_VMU7xXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          </div>
+      </div>
+    </section>
+    
+    <section class="title2">
+      <div class="container">
+        <div class="info-con">
+          <div class="info">
+            <h3>Application Design</h3>
+            <!-- พิมพ์ lerom50 กด enter จะเป็นการจำลองคำ 50 คำ-->
+          </div>
+        </div>
+
+        <div class="blog-con">
+          <div class="blog-item">
+                <h2>Chuanchim</h2>
+                <p id="description3">The Chuanchim restaurant's food ordering application will present various menus on the main page.Display the logo of "Chuanchim" and images depicting the restaurant's ambiance.
+                  Show the main menu divided into Savory dishes Desserts Beverages and Healthy options. Display a list of food and beverages in each category.
+                  Show images Menu names Prices and brief descriptions of each item.</p>
+                <img src="/img/app.png" alt="">
+                <iframe width="600" height="355" src="https://www.youtube.com/embed/DGzpaaSeNOs?si=kG0JWoUYraj3jHrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="blog-con">
+          <div class="blog-item">
+            <h2>kmutt sport booking</h2>
+            <p id="description4">This application has been designed to address and alleviate the issues related to booking sports facilities and sports equipment at KMUTT by replacing the traditional paper sign-up system with a digital application. The colors used in the application are orange and yellow, representing the identity of the university.</p>
+              <!-- แอปพลิเคชันนี้ได้รับการออกแบบมาเพื่อแก้ไขและบรรเทาปัญหาที่เกี่ยวข้องกับการจองสถานที่กีฬาและอุปกรณ์กีฬาที่มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT) โดยแทนที่ระบบการลงชื่อแบบกระดาษดั้งเดิมด้วยแอปพลิเคชันดิจิทัล สีที่ใช้ในแอปพลิเคชันจะเป็นสีแสดและสีเหลือง ซึ่งสื่อถึงอัตลักษณ์ของมหาวิทยาลัยอย่างชัดเจน -->
+            <img src="/img/app5.png" alt="">
+             
+              <iframe width="600" height="355" src="https://www.youtube.com/embed/GYl3O9Ox-hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="title3">
+      <div class="container">
+        <div class="info-con">
+          <div class="info">
+            <h3>Website Design</h3>
+            <!-- พิมพ์ lerom50 กด enter จะเป็นการจำลองคำ 50 คำ-->
+          </div>
+        </div>
+        
+        <div class="blog-con">
+          <div class="blog-item">
+            <h2>Traveling</h2><br>
+            <img src="/img/travel.png" alt="">
+          </div>
+        </div>
+        <div class="blog-con">
+          <div class="blog-item">
+            <h2>Shoping</h2><br>
+            <iframe width="600" height="355" src="https://www.youtube.com/embed/JhgUfUjwcYI?si=5l-wgEcvaRy8PNAj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+    </section>
+    
+    <section class="title4">
+      <div class="container">
+        <div class="info-con">
+          <div class="info">
+            <h3>Poster Design</h3>
+            <!-- พิมพ์ lerom50 กด enter จะเป็นการจำลองคำ 50 คำ-->
+          </div>
+        </div>
+    
+        <div class="blog-con">
+          <div class="blog-item">
+            <h2>Shopping Online</h2><br>
+            <img src="/img/onshopPhoster.jpg" alt="">
+            <p id="pos">During the COVID-19 pandemic, online shopping has become the primary option for purchasing various products without leaving home. The poster design should reflect the convenience and safety that online shopping can offer, with "Nong OnShop" as a cute and friendly representative.</p>
+            <!-- ในช่วงที่โควิด-19 ระบาด การช้อปปิ้งออนไลน์กลายเป็นทางเลือกหลักในการซื้อสินค้าต่าง ๆ โดยไม่ต้องออกจากบ้าน การออกแบบโปสเตอร์จะต้องสะท้อนถึงความสะดวกสบายและความปลอดภัยที่การช้อปปิ้งออนไลน์สามารถมอบให้ได้ โดยมี "น้องออนช้อป" เป็นตัวแทนที่น่ารักและเป็นมิตร -->
+
+          </div>
+  
+          <div class="blog-item">
+            <h2>Covid-19</h2><br>
+            <img src="/img/Pro1.png" alt="">
+            <p id="pos">A 3-panel cartoon satirizing the COVID-19 money distribution, where the character comes up with the exaggerated idea of catching COVID to go on a trip. It emphasizes humor while reflecting the issue of wanting to travel but being hindered by money during COVID, helping viewers relax and laugh at the real situation.</p>
+            <!-- การ์ตูน 3 ช่องที่ล้อเลียนการแจกเงินโควิด-19 โดยตัวละครคิดวิธีเกินจริงในการติดโควิดเพื่อไปเที่ยว เน้นความขบขันและสะท้อนปัญหาของการอยากเที่ยวแต่ติดขัดเรื่องเงินในช่วงโควิด ช่วยให้ผู้ชมผ่อนคลายและหัวเราะจากสถานการณ์จริง. -->
+          </div>
+        </div>
+    </section>
+    
+    <section class="title5">
+      <div class="container">
+          <div class="info-con">
+            <div class="info">
+              <h3>Character Design</h3>
+              <!--<p></p>  พิมพ์ lerom50 กด enter จะเป็นการจำลองคำ 50 คำ character design-->
+            </div>
+          </div>
+    
+          <div class="blog-con">
+            <div class="blog-item"><br>
+              <img src="/img/Animat0.jpeg" alt="">
+              <p></p>
+            </div>
+          </div>
+          <div class="blog-con">
+            <div class="blog-item"><br>
+              <img src="/img/Animat1.jpeg" alt="">
+              <p></p>
+            </div>
+          </div>
+          <div class="blog-con">
+            <div class="blog-item"><br>
+              <img src="/img/char1.png" alt="">
+              <p></p>
+            </div>
+          </div>
+    
+      </div>
+    </section>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<br>
+
+<div class="info">
+  <!-- <h3>Stickers Design</h3> -->
+</div>
+
+<div class="carousel clearfix">  
+    
+    <div class="carousel-view clearfix">
+      
+      <div class="box">
+        <p><img src="/img/TaTo0.jpg" alt="image"> </p>
+      </div><!-- end box -->
+
+      <div class="box">
+        <p><img src="/img/TaTo1.jpg" alt="image"></p>
+      </div><!-- end box -->
+
+      <div class="box">
+        <p><img src="/img/TaTo2.jpg" alt="image"></p>
+      </div><!-- end box -->
+
+      <div class="box">
+        <p><img src="/img/TaTo3.jpg"alt="image"></p>
+      </div><!-- end box -->
+
+      <div class="box">
+        <p><img src="/img/TaTo4.jpg" alt="image"></p>
+      </div><!-- end box -->
+
+      <div class="box">
+          <p><img src="/img/TaTo5.jpg" alt="image"></p>
+      </div><!-- end box -->
+
+              
+    </div>
+<!-- sticker -->
+    <script src="slick-slider-master/js/jquery.js"></script>
+    <script  src="slick-slider-master/js/slick.min.js"></script>
+    <script>
+      $('.carousel-view').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    </script>
+<!-- ------ -->
+  </div>
+<section class="BG-project" id="eventpage">
+  <div  class="image-grid" >
+    <img src="/tpic/TT1.png" alt="">
+  </div>
+</section>
+  
+  <!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+  <section class="project" id="tattoo-colour">
+    <h2> Tattoo Colour's concert</h2>
+    <p>The design and planning of the LED Strip Light installation, tailored to fit the circular metal framework and the storage space beneath the stage, must consider both aesthetics and functionality. It involves selecting LED types that provide adequate lighting and allow for color control, enhancing the mood and dimension of the performance. At the same time, attention should be given to concealing wiring and control devices within the storage space under the stage, ensuring neatness and safety. Additionally, the electrical system must be properly connected to allow for adjustable lighting effects that can change according to the performance's timing or needs, creating a visually stunning experience for the audience and leaving a memorable impression.</p>
+    <!-- <p>การออกแบบและวางแผนการติดตั้ง LED Strip Light ที่เหมาะสมกับโครงเหล็กวงกลมและพื้นที่ใต้พื้นเวทีต้องพิจารณาทั้งความสวยงามและประสิทธิภาพในการใช้งาน โดยการเลือกประเภท LED ที่ให้แสงสว่างที่เพียงพอและสามารถควบคุมสีได้ตามต้องการ เพื่อเพิ่มมิติและอารมณ์ให้กับการแสดง ในขณะเดียวกัน ต้องคำนึงถึงการซ่อนสายไฟและอุปกรณ์ควบคุมในพื้นที่จัดเก็บใต้พื้นเวทีให้เรียบร้อยและปลอดภัย รวมถึงการเชื่อมต่อระบบไฟที่เหมาะสม เพื่อให้แสงไฟสามารถปรับเปลี่ยนได้ตามช่วงเวลา หรือความต้องการของการแสดง เพื่อสร้างความตื่นตาตื่นใจให้กับผู้ชมและสร้างประสบการณ์ที่น่าประทับใจ.</p> -->
+    <div class="image-grid">
+        <img src="/tpic/t1.png" alt="Tattoo Colour Image 1">
+        <img src="/tpic/t3.jpg" alt="Tattoo Colour Image 2">
+        <img src="/tpic/t4.jpg" alt="Tattoo Colour Image 3">
+    </div>
+   
+</section>
+
+<section class="project" id="s2o-festival">
+    <h2>S2O Songkran Music Festival</h2>
+    <p>The design and planning of the LED Strip Light installation must consider the number of strips to be placed and the distance between them to ensure even light distribution and suitability for the event space. The plan should then be handed over to the installation team and the electrical team for smooth collaboration.</p>
+    <!-- <p>การออกแบบและจัดทำแผนการติดตั้ง LED Strip Light ต้องคำนึงถึงจำนวนที่ต้องวางและระยะห่างระหว่างแถบแสง เพื่อให้แสงกระจายอย่างสม่ำเสมอและเหมาะสมกับพื้นที่จัดงาน พร้อมส่งมอบแผนให้ทีมติดตั้งและทีมระบบไฟทำงานร่วมกันอย่างราบรื่น.</p> -->
+    <div class="image-grid">
+        <img src="/tpic/t5.png" alt="S2O Festival Image">
+    </div>
+</section>
+
+<section class="project" id="g-circuit">
+    <h2>G-circuit Songkran Festival 2024</h2>
+    <p>The control, testing, and inspection of the LED lighting system, including 4 types: Disco light, LED ball, LED tube, and Kinetic ring, consist of:</p>
+    <ul>
+      <li><strong>Control of Installation:</strong> Plan and install the lights appropriately, ensuring proper connection of the electrical system.</li>
+      <li><strong>Testing:</strong> Check the functionality of each type of light, such as color changes and movement.</li>
+      <li><strong>System Inspection:</strong> Inspect the entire lighting system to ensure that all lights and effects work as intended.</li>
+    </ul>
+    <!-- การควบคุมการติดตั้ง, ทดสอบ, และตรวจสอบระบบไฟ LED 4 ประเภท ได้แก่ Disco light, LED ball, LED tube, และ Kinetic ring ประกอบด้วย:
+
+ควบคุมการติดตั้ง: วางแผนและติดตั้งไฟให้เหมาะสม พร้อมการเชื่อมต่อระบบไฟให้ถูกต้อง
+ทดสอบ: ตรวจสอบการทำงานของไฟแต่ละประเภท เช่น การเปลี่ยนสีและการเคลื่อนไหว
+ตรวจสอบระบบไฟ: ตรวจสอบการทำงานของระบบไฟทั้งหมด เพื่อให้แน่ใจว่าแสงและเอฟเฟกต์ต่าง ๆ ทำงานได้ตามที่ต้องการ -->
+
+    <div class="image-grid">
+        <img src="/tpic/t14.png" alt="G-circuit Image 1">
+        <img src="/tpic/t15.png" alt="G-circuit Image 2">
+        <img src="/tpic/t16.png" alt="G-circuit Image 3">
+        <img src="/tpic/t17.png" alt="G-circuit Image 4">
+        <img src="/tpic/t18.png" alt="G-circuit Image 5">
+    </div>
+    <iframe 
+    width="600" 
+    height="355" 
+    src="https://www.youtube.com/embed/Hzx6tzYimX0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+</section>
+
+<section class="project" id="jeff-sater">
+    <h2>Jeff Satur's concert</h2>
+    <p>For the installation of 4 Avatar trees for a concert, using LED Strip Lights of various lengths tailored to the characteristics of each tree, the goal is to achieve a visually appealing and striking result. Additionally, it is necessary to check the IP settings of each device to prevent errors in controlling the lights and to facilitate the efficient creation of lighting scenes that align with the performance requirements.</p>
+    <!-- ในการติดตั้งต้นไม้ AVATAR 4 ต้นสำหรับคอนเสิร์ต โดยใช้ LED Strip Light ความยาวหลายขนาดที่เหมาะสมกับลักษณะของต้นไม้แต่ละต้น เพื่อให้ได้ผลลัพธ์ที่สวยงามและน่าสนใจ นอกจากนี้ยังต้องตรวจสอบการตั้งค่า IP ของแต่ละอุปกรณ์เพื่อป้องกันข้อผิดพลาดในการควบคุมไฟ และช่วยอำนวยความสะดวกในการจัดทำ Scene ไฟอย่างมีประสิทธิภาพและตรงตามความต้องการของการแสดง. -->
+    <div class="image-grid">
+        <img src="/tpic/t6.jpg" alt="Jeff Sater Image 1">
+        <img src="/tpic/t7.png" alt="Jeff Sater Image 2">
+    </div>
+</section>
+
+<section class="project" id="here-comes-the-sun">
+    <h2>Here Comes the S.U.N. Press Conference</h2>
+    <p>Install LED Ball and control the lighting scene during the event.</p>
+    <!-- <p>ติดตั้ง LED Ball และควบคุมการแสดง Scene ไฟในงาน</p> -->
+    <div class="image-grid">
+        <img src="/tpic/t8.png" alt="Here Comes the S.U.N. Image 1">
+        <img src="/tpic/t9.png" alt="Here Comes the S.U.N. Image 2">
+        <img src="/tpic/t10.png" alt="Here Comes the S.U.N. Image 3">
+    </div>
+</section>
+
+<section class="project" id="win-methawin">
+    <h2>Win Metawin's concert</h2>
+    <p>Plan the installation and control of LED Ball and LED Tube for the VTR filming during the concert.</p>
+    <!-- <p>วางแผนติดตั้งและควบคุม LED Ball และ LED Tube ในการถ่าย VTR สำหรับคอนเสิร์ต</p> -->
+    <div class="image-grid">
+        <img src="/tpic/t11.png" alt="Win Methawin Image 1">
+        <img src="/tpic/t12.png" alt="Win Methawin Image 2">
+        <img src="/tpic/t13.png" alt="Win Methawin Image 3">
+    </div>
+</section>
+
+</main>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+
+    <div class="footer-bottom">
+        <p>Copyright 2023.All right reseved Ta web design.</p>
+    </div>
+    
+
+<!-- แปลภาษา -->
+<script>
+  const translations = {
+    "en": {
+      title1: "ADHD Therapy",
+      description1: "The development of a program called ADHD therapy was created for therapists treating ADHD children between the ages of 8 and 12. The program records information about therapists and children receiving therapy.",
+      title2: "AR Anatomy",
+      description2: "This program has been developed and designed for learning Anatomy, with a focus on three user interfaces that prioritize clarity and simplicity to prevent user errors. It is also designed to heavily emphasize the use of Augmented Reality (AR). The chosen colors aim to provide a comfortable and non-fatiguing viewing experience. Both the UI design and the AR implementation should be carefully crafted to enhance the program's usability and its effectiveness as a learning tool for Anatomy, aligning with the program's objectives.",
+      title3: "Chuanchim",
+      description3: "The Chuanchim restaurant's food ordering application will present various menus on the main page. Display the logo of \"Chuanchim\" and images depicting the restaurant's ambiance. Show the main menu divided into Savory dishes, Desserts, Beverages, and Healthy options. Display a list of food and beverages in each category. Show images, menu names, prices, and brief descriptions of each item.",
+      title4: "KMUTT Sport Booking",
+      description4: "This application has been designed to address and alleviate the issues related to booking sports facilities and sports equipment at KMUTT by replacing the traditional paper sign-up with a digital application."
+    },
+    "th": {
+      
+      description1: "การพัฒนาโปรแกรมที่ชื่อว่า ADHD Therapy ได้รับการออกแบบมาสำหรับนักบำบัดที่รักษาเด็กที่มีภาวะสมาธิสั้น (ADHD) อายุระหว่าง 8 ถึง 12 ปี โปรแกรมนี้ใช้สำหรับบันทึกข้อมูลเกี่ยวกับนักบำบัดและเด็กที่ได้รับการบำบัด",
+      description2: "โปรแกรมนี้ได้รับการพัฒนาและออกแบบมาเพื่อการเรียนรู้วิชากายวิภาค โดยมีจุดเน้นที่การใช้งานอินเทอร์เฟซที่ชัดเจนและเรียบง่ายเพื่อป้องกันข้อผิดพลาดของผู้ใช้ และเน้นการใช้งานเทคโนโลยีความจริงเสริม (AR) เป็นหลัก สีที่เลือกใช้มีเป้าหมายเพื่อสร้างประสบการณ์ที่สบายตาและไม่ทำให้เกิดความเมื่อยล้า ทั้งการออกแบบ UI และการใช้ AR ได้รับการดูแลอย่างละเอียดเพื่อเพิ่มความสะดวกในการใช้งานและประสิทธิภาพของโปรแกรมในการเป็นเครื่องมือการเรียนรู้วิชากายวิภาคให้ตรงกับวัตถุประสงค์ของโปรแกรม",      
+      description3: "แอปพลิเคชันสั่งอาหารของร้านชวนชิมจะแสดงเมนูต่าง ๆ บนหน้าหลัก โดยมีโลโก้ของ \"ชวนชิม\" และภาพที่แสดงบรรยากาศของร้าน รวมถึงเมนูหลักที่แบ่งออกเป็น อาหารคาว ขนมหวาน เครื่องดื่ม และอาหารเพื่อสุขภาพ พร้อมแสดงรายการอาหารและเครื่องดื่มในแต่ละหมวดหมู่ มีภาพประกอบ ชื่อเมนู ราคา และคำอธิบายสั้น ๆ ของแต่ละรายการ",
+      description4: "แอปพลิเคชันนี้ได้รับการออกแบบมาเพื่อแก้ปัญหาที่เกี่ยวข้องกับการจองสนามกีฬาและอุปกรณ์กีฬาในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT) โดยแทนที่การลงชื่อจองในรูปแบบกระดาษด้วยระบบแอปพลิเคชันดิจิทัล"
+    }
+  };
+
+
+  function setLanguage(lang) {
+    document.getElementById("description1").innerText = translations[lang].description1;
+    document.getElementById("description2").innerText = translations[lang].description2;
+    document.getElementById("description3").innerText = translations[lang].description3;
+    document.getElementById("description4").innerText = translations[lang].description4;
+  }
+</script>
+<!-- ------------- -->
+</body>
+</html>
