@@ -213,7 +213,7 @@ button:hover {
         background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังโปร่งแสง */
         top: 80px;
         left: -100%;/*-100% */
-        margin-left: 630px;
+        margin-left: 80%;
         text-align: center;
         /* transition: .5s; */
         border-radius: 0 0 20px 20px;
@@ -262,3 +262,5 @@ button:hover {
         height: 600px;
     } 
 }
+
+
