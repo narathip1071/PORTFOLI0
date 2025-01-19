@@ -160,7 +160,27 @@ button:hover {
     letter-spacing: 0.2px;
 }
 /* ขนาดหน้จอต่ำกว่า 1120 */
+footer{
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom {
+    margin-top: 0px;
+    background-color: #303d49; /* พื้นหลังสีเข้ม */
+    color: #fff; /* สีข้อความขาว */
+    padding: 15px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
+    font-family: 'Arial', sans-serif; /* ใช้ฟอนต์อ่านง่าย */
+    font-size: 14px; /* ขนาดฟอนต์ */
+    border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
 
+.footer-bottom p {
+   
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+
+}
 
 @media (max-width: 952px){
     label.logo{
@@ -281,27 +301,7 @@ button:hover {
     }
 }
 
-footer{
-    margin: 0;
-    padding: 0;
-}
-.footer-bottom {
-    margin-top: 0px;
-    background-color: #303d49; /* พื้นหลังสีเข้ม */
-    color: #fff; /* สีข้อความขาว */
-    padding: 15px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
-    font-family: 'Arial', sans-serif; /* ใช้ฟอนต์อ่านง่าย */
-    font-size: 14px; /* ขนาดฟอนต์ */
-    border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-}
 
-.footer-bottom p {
-   
-    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
-    text-align: center; /* จัดข้อความให้อยู่กลาง */
-
-}
 
 /*
 iphone 482*763 

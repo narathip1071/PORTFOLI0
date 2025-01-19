@@ -203,5 +203,11 @@ footer{
         right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
     }
 
-
+}
+@media (max-width: 840px){
+  label.logo{
+      font-size: 22px;
+      padding: 0 50px;
+      letter-spacing: 2px;
+  }
 }

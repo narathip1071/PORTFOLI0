@@ -139,3 +139,10 @@ footer{
     }
 
 }
+@media (max-width: 840px){
+    label.logo{
+        font-size: 22px;
+        padding: 0 50px;
+        letter-spacing: 2px;
+    }
+}

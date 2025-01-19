@@ -12,14 +12,7 @@ body{
      background-color: #000;
    
 }
-h1,h2,h3,h4,p{
-    color: #fff;
-}
-p{
-    text-indent: 10vh;
-    padding: 0 3vh ;
-    text-align: justify;
-}
+
 nav {
     background: #303d49;
     position: fixed;
@@ -95,8 +88,16 @@ button:active{
 main {
     padding: 0px 20px;
     z-index: 0;
+    text-align: center;
 }
-
+h1,h2,h3,h4,p{
+    color: #fff;
+}
+p{
+    text-indent: 2vh;
+    padding: 0 3vh ;
+    text-align: justify;
+}
 /* Title Section */
 h3 {
     font-size: 2.5em;
@@ -152,7 +153,7 @@ h2 {
 }
 #pos{
     text-align: justify;
-    text-indent: 5vh;
+    text-indent: 2vh;
     padding: 2vh;
 }
 .clearfix:before, .clearfix:after {
@@ -210,16 +211,6 @@ h2 {
     right: 0px;
 }
 
-@media only screen and (max-width: 1180px) {
-    .carousel {
-        width: 90%;
-    }
-}
-
-
-
-
-
 
 
 
@@ -229,13 +220,13 @@ iframe {
     margin-top: 20px;
     width: 100%;
     max-width: 600px;
-    height:355 ;
+   
 }
 
 /* สไตล์สำหรับ section ทั้งหมด */
 .project {
- 
-    max-width: 1100px;
+    text-align: center;
+    /* max-width: 1100px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .BG-project{
