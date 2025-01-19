@@ -11,10 +11,15 @@ body{
     background-color: #000;
     font-family: "Roblox" ,sans-serif;
 } 
-nav{
+nav {
     background: #303d49;
+    position: fixed;
+    top: 0; /* ชิดด้านบน */
+    left: 0; /* ชิดด้านซ้าย */
     height: 80px;
     width: 100%;
+    z-index: 1000; /* ทำให้เลเยอร์ของ nav อยู่เหนือองค์ประกอบอื่น */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้ดูมีมิติ */
 }
 label.logo{
     color: white;
@@ -41,7 +46,8 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active,a:hover{
-    background: #1b9bff;
+    background: #fff;
+    color: #000;
     transform: .5s;
 }
 .checkbtn{
@@ -61,10 +67,34 @@ a.active,a:hover{
     text-align: center;
 }
 .resume img{
-    
-    width: 50vw;
+margin-top: 80px;
+   width: 60%;
       
 }
+
+/*----------------------------------------------  */
+footer{
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom {
+    margin-top: 0px;
+    background-color: #303d49; /* พื้นหลังสีเข้ม */
+    color: #fff; /* สีข้อความขาว */
+    padding: 15px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
+    font-family: 'Arial', sans-serif; /* ใช้ฟอนต์อ่านง่าย */
+    font-size: 14px; /* ขนาดฟอนต์ */
+    border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+.footer-bottom p {
+   
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+
+}
+/* --------------------------------------------------- */
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
@@ -73,35 +103,34 @@ a.active,a:hover{
     nav ul li a{
         font-size: 16px;
     }
-    
 }
 
-@media (max-width: 810px){
-    .checkbtn{
-        display: block;
+@media (max-width: 840px){
+    .checkbtn {
+        display: block; /* แสดงปุ่ม checkbtn */
     }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;/*-100% */
-        text-align: center;
-        transition: all .5s;
+    ul {
+        position: fixed; /* ทำให้ ul อยู่ในตำแหน่งคงที่ */
+        background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังพร้อมความโปร่งแสง */
+        top: 80px; /* ระยะห่างจากด้านบน */
+        right: 100%; /* ซ่อน ul ไว้ทางขวาของจอ */
+        margin-right: -20%; /* ขยับ ul ไปทางขวา */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        border-radius: 0 0 20px 20px; /* มุมล่างโค้งมน */
+        transition: left 0.5s ease; /* เพิ่มการเลื่อนแบบ smooth */
     }
-    nav ul li{
-        display: block;
+    nav ul li {
+        display: block; /* แสดง li เป็นบล็อก */
     }
-    nav ul li a{
-        font-size: 20px;
+    nav ul li a {
+        font-size: 20px; /* ปรับขนาดตัวอักษร */
     }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
+    a:hover, a.active {
+        background: none; /* เอาสีพื้นหลังออก */
+        color: #0082e6; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
     }
-    #check:checked ~ ul{
-        left: 0;
+    #check:checked ~ ul {
+        right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
     }
 
 }

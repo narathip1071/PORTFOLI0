@@ -11,14 +11,17 @@ body{
     background: #fff;
 
 }
-nav{ 
+nav {
     background: #303d49;
+    position: fixed;
+    top: 0; /* ชิดด้านบน */
+    left: 0; /* ชิดด้านซ้าย */
     height: 80px;
     width: 100%;
-    position:fixed;
-    z-index: 999;
-    
+    z-index: 1000; /* ทำให้เลเยอร์ของ nav อยู่เหนือองค์ประกอบอื่น */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้ดูมีมิติ */
 }
+
 label.logo{
     
     color: white;
@@ -45,7 +48,8 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active,a:hover{
-    background: #1b9bff;
+    background: #fff;
+    color: #000;
     transform: .5s;
 }
 .checkbtn{
@@ -72,9 +76,6 @@ button {
 button:hover {
     background-color: #e0e0e0;
   }
-
-
-
 .my-name{
     position: relative;
 }
@@ -155,6 +156,8 @@ button:hover {
     margin-top: 30px;
     font-size: 20px;
     text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 0.2px;
 }
 /* ขนาดหน้จอต่ำกว่า 1120 */
 
@@ -179,10 +182,7 @@ button:hover {
     }
     #uiDescription{
         margin: -5px;
-    }
-    
-
-   
+    } 
     
 }
 
@@ -195,7 +195,7 @@ button:hover {
         background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังพร้อมความโปร่งแสง */
         top: 80px; /* ระยะห่างจากด้านบน */
         right: 100%; /* ซ่อน ul ไว้ทางขวาของจอ */
-        margin-right: -30%; /* ขยับ ul ไปทางขวา */
+        margin-right: -20%; /* ขยับ ul ไปทางขวา */
         text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
         border-radius: 0 0 20px 20px; /* มุมล่างโค้งมน */
         transition: left 0.5s ease; /* เพิ่มการเลื่อนแบบ smooth */
@@ -213,13 +213,22 @@ button:hover {
     #check:checked ~ ul {
         right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
     }
+
+    .my-name-con p{
+        font-size: 20px;
+        width: 310px;
+    }
+    .my-name-con h3{
+        font-size: 25px; 
+    }
+    .my-name-con h1{
+        font-size: 80px;
+    }
 }
 
 
-@media (max-width: 480px){
-    
-
-  
+@media (max-width: 540px){
+   
 /* ------------------------------------------------------ */
     .my-name-con{
         top: 350px;
@@ -236,21 +245,47 @@ button:hover {
         font-size: 20px;
         width: 280px;
     }
-   
-       
-
-
     /* ------------------------------ */
     .profile-img img{
-      
         height: 600px;
     }   /* 4 ตัว บน ขวา ล่าง ซ้าย 3 ตัว บ (ข-ซ) ล 2 ตัว (บ-ล)(ข-ซ)*/
     .profile-into{
         height: 600px;
     } 
+
+    .my-name-con p{
+        font-size: 12px;
+        width: 200px;
+    }
+    .my-name-con h3{
+        font-size: 16px; 
+    }
+    .my-name-con h1{
+        font-size: 50px;
+    }
 }
 
+footer{
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom {
+    margin-top: 0px;
+    background-color: #303d49; /* พื้นหลังสีเข้ม */
+    color: #fff; /* สีข้อความขาว */
+    padding: 15px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
+    font-family: 'Arial', sans-serif; /* ใช้ฟอนต์อ่านง่าย */
+    font-size: 14px; /* ขนาดฟอนต์ */
+    border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
 
+.footer-bottom p {
+   
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+
+}
 
 /*
 iphone 482*763 
