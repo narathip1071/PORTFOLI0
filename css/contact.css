@@ -114,6 +114,7 @@ footer{
 }
 .footer-bottom {
   position: fixed; /* ตรึง footer ไว้กับขอบจอ */
+  bottom: 0;
   left: 0; /* ชิดขอบด้านซ้าย */
   width: 100%; /* กำหนดความกว้างให้เต็มหน้าจอ */
   background-color: #303d49; /* พื้นหลังสีเข้ม */
@@ -131,48 +132,15 @@ footer{
   text-align: center; /* จัดข้อความให้อยู่กลาง */
 
 }
-  /* Responsive Design */
-  
-  /* หน้าจอเล็กกว่า 768px (มือถือและแท็บเล็ตแนวตั้ง) */
-  @media (max-width: 768px) {
-    .footer-grid {
-      grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
-      text-align: center; /* จัดข้อความให้อยู่กลาง */
-    }
-  
-    .footeritem img {
-      margin-bottom: 20px; /* เพิ่มช่องว่างใต้รูป */
-    }
-  }
-  
-  /* หน้าจอเล็กกว่า 480px (มือถือขนาดเล็ก) */
-  @media (max-width: 480px) {
-    .footer-grid {
-      padding: 10px; /* ลด Padding */
-      gap: 15px; /* ลดช่องว่างระหว่างคอลัมน์ */
-    }
-  
-    .footeritem p {
-      font-size: 14px; /* ลดขนาดตัวอักษร */
-    }
-  
-    .footeritem i {
-      font-size: 16px; /* ลดขนาดไอคอน */
-    }
-  }
-  
-  
 @media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-    
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
 }
-
 @media (max-width: 840px){
     .checkbtn {
         display: block; /* แสดงปุ่ม checkbtn */
@@ -205,10 +173,36 @@ footer{
     }
 
 }
-@media (max-width: 480px){
-  label.logo{
-      font-size: 22px;
-      padding: 0 50px;
-      letter-spacing: 2px;
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+  }
+
+  .footeritem img {
+    margin-bottom: 20px; /* เพิ่มช่องว่างใต้รูป */
   }
 }
+
+/* หน้าจอเล็กกว่า 480px (มือถือขนาดเล็ก) */
+@media (max-width: 480px) {
+  .footer-grid {
+    padding: 10px; /* ลด Padding */
+    gap: 15px; /* ลดช่องว่างระหว่างคอลัมน์ */
+  }
+
+  .footeritem p {
+    font-size: 14px; /* ลดขนาดตัวอักษร */
+  }
+
+  .footeritem i {
+    font-size: 16px; /* ลดขนาดไอคอน */
+  }
+  label.logo{
+    font-size: 22px;
+    padding: 0 50px;
+    letter-spacing: 2px;
+}
+}
+
+

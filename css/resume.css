@@ -79,7 +79,7 @@ footer{
   }
   .footer-bottom {
     position: fixed; /* ตรึง footer ไว้กับขอบจอ */
-    bottom: 0; /* ชิดขอบด้านล่าง */
+    /* bottom: 0; ชิดขอบด้านล่าง  */
     left: 0; /* ชิดขอบด้านซ้าย */
     width: 100%; /* กำหนดความกว้างให้เต็มหน้าจอ */
     background-color: #303d49; /* พื้นหลังสีเข้ม */
@@ -140,6 +140,9 @@ footer{
     .resume img{
         width: 70%; 
      }
+    .footer-bottom {
+        bottom: 0;
+  }
 
 }
 @media (max-width: 480px){
