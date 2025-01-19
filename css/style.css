@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* overflow-x: hidden;  */
 }
 body{
     font-family: "Roblox" ,sans-serif;
@@ -95,19 +96,20 @@ button:hover {
     color: #fff;
     font-weight: bold;
 }
-.my-name-con p{
+.my-name-con p {
     font-family: monospace;
     font-size: 25px;
     color: #000;
     background-color: #19dad0;
-    /* background-color: #00FF66; green */
-    word-spacing: 5px; /* //ระยะห่างของคำ */
+    word-spacing: 5px; /* ระยะห่างของคำ */
     margin-top: 15px;
-    padding: 8px 8px 8px 8px ;
-    width: 330px;
-    border-radius: 1px;
-
+    padding: 8px; /* ลด padding ให้กระชับ */
+    max-width: 100%; /* จำกัดความกว้างไม่ให้เกินคอนเทนเนอร์ */
+    width: auto; /* ให้ขนาดปรับตามเนื้อหา */
+    border-radius: 5px; /* ปรับมุมให้ดูสวยงาม */
+    overflow-wrap: break-word; /* ตัดคำหากคำยาวเกิน */
 }
+
 .my-name-con p:hover{
     background-color: #d5ea69;
 }
@@ -143,7 +145,7 @@ button:hover {
 .box2-info{
     margin-top: 100px;
     margin-left: 1vh;
-    width: 450px;
+    /* width: ; */
     margin: 10%;
 }
 
@@ -164,8 +166,9 @@ footer{
     margin: 0;
     padding: 0;
 }
+
 .footer-bottom {
-    margin-top: 0px;
+    margin-top: 50px;
     background-color: #303d49; /* พื้นหลังสีเข้ม */
     color: #fff; /* สีข้อความขาว */
     padding: 15px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
@@ -174,6 +177,7 @@ footer{
     border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
 }
+
 
 .footer-bottom p {
    
@@ -233,73 +237,65 @@ footer{
     #check:checked ~ ul {
         right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
     }
+}
 
-    .my-name-con p{
-        font-size: 20px;
-        width: 310px;
+@media (max-width: 650px) {
+   
+    .my-name-con {
+        position: absolute; /* หรือใช้ fixed หากต้องการให้คงตำแหน่ง */
+        /* top: 0;  */
+        left: 50%; /* จัดให้อยู่กลางจอในแนวนอน */
+        transform: translateX(-50%); /* จัดให้อยู่กลางจอในแนวนอน */
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
+        overflow: hidden;
+        text-align: center;
     }
-    .my-name-con h3{
-        font-size: 25px; 
-    }
-    .my-name-con h1{
-        font-size: 80px;
-    }
+    
+.my-name-con h3{
+    font-size: 20px;
+}
+.my-name-con h1 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.my-name-con p {
+    font-family: monospace;
+    font-size: 16px;
+    color: #000;
+    background-color: #19dad0;
+    word-spacing: 5px;
+    margin: 15px auto;
+    padding: 8px;
+    max-width: 60%;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.my-name-con a {
+    text-decoration: none;
+}
+
+.my-name-con a:hover p {
+    background-color: #d5ea69;
 }
 
 
-@media (max-width: 480px){
-   
-/* ------------------------------------------------------ */
-    .my-name-con{
-        top: 350px;
-        margin-left: 80px;
-        
-    }
-    /* ------------------------------ */
-    .profile-img img{
-        height: 600px;
-    }   /* 4 ตัว บน ขวา ล่าง ซ้าย 3 ตัว บ (ข-ซ) ล 2 ตัว (บ-ล)(ข-ซ)*/
-    .profile-into{
-        height: 600px;
-    } 
-
-    .my-name-con p{
-        font-size: 12px;
-        width: 200px;
-    }
-    .my-name-con h3{
-        font-size: 16px; 
-    }
-    .my-name-con h1{
-        font-size: 50px;
-    }
+}
+@media (max-width:480px){
     label.logo{
         font-size: 22px;
         padding: 0 50px;
         letter-spacing: 2px;
     }
-    .box2-info{
-        margin-top: 100px;
-        margin-left: 1vh;
-        width: 450px;
-        margin: 10%;
-    }
-    
-    .box2-info h1{
-        margin-top: 10px;
-        font-size: 30px;
-       
-    }
-    .box2-info p{
-       max-width: 350px;
-        margin-top: 30px;
-        margin-right: 30px;
-        font-size: 16px;
-        text-indent: 30px;
-        text-align: justify;
-        letter-spacing: 0.1px;
-    }
+
 }
+
+/*
 
 
 

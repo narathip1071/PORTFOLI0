@@ -67,9 +67,9 @@ a.active,a:hover{
     text-align: center;
 }
 .resume img{
-margin-top: 80px;
+   margin-top: 80px;
    width: 60%;
-      
+   
 }
 
 /*----------------------------------------------  */
@@ -137,12 +137,15 @@ footer{
     #check:checked ~ ul {
         right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
     }
+    .resume img{
+        width: 70%; 
+     }
 
 }
-@media (max-width: 840px){
+@media (max-width: 480px){
     label.logo{
         font-size: 22px;
         padding: 0 50px;
         letter-spacing: 2px;
     }
-}
+  }

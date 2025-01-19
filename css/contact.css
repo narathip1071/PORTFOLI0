@@ -10,7 +10,7 @@
 body{
      /* font-family: monterrat;หาฟ้อนสวยๆมาใส่ */
      font-family: "Roblox" ,sans-serif;
-     background-color: #000;
+     background-color: #fff;
 }
 nav {
   background: #303d49;
@@ -114,7 +114,6 @@ footer{
 }
 .footer-bottom {
   position: fixed; /* ตรึง footer ไว้กับขอบจอ */
-  bottom: 0; /* ชิดขอบด้านล่าง */
   left: 0; /* ชิดขอบด้านซ้าย */
   width: 100%; /* กำหนดความกว้างให้เต็มหน้าจอ */
   background-color: #303d49; /* พื้นหลังสีเข้ม */
@@ -128,7 +127,6 @@ footer{
 }
 
 .footer-bottom p {
- 
   line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
   text-align: center; /* จัดข้อความให้อยู่กลาง */
 
@@ -202,9 +200,12 @@ footer{
     #check:checked ~ ul {
         right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
     }
+    .footer-bottom {
+      bottom: 0;
+    }
 
 }
-@media (max-width: 840px){
+@media (max-width: 480px){
   label.logo{
       font-size: 22px;
       padding: 0 50px;
