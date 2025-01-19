@@ -227,23 +227,13 @@ button:hover {
 }
 
 
-@media (max-width: 540px){
+@media (max-width: 480px){
    
 /* ------------------------------------------------------ */
     .my-name-con{
         top: 350px;
-        margin-left: 100px;
+        margin-left: 80px;
         
-    }
-    .my-name-con h3{
-        font-size: 22px;
-    }
-    .my-name-con h1{
-        font-size: 70px;
-    }
-    .my-name-con p{
-        font-size: 20px;
-        width: 280px;
     }
     /* ------------------------------ */
     .profile-img img{
@@ -262,6 +252,32 @@ button:hover {
     }
     .my-name-con h1{
         font-size: 50px;
+    }
+    label.logo{
+        font-size: 22px;
+        padding: 0 50px;
+        letter-spacing: 2px;
+    }
+    .box2-info{
+        margin-top: 100px;
+        margin-left: 1vh;
+        width: 450px;
+        margin: 10%;
+    }
+    
+    .box2-info h1{
+        margin-top: 10px;
+        font-size: 30px;
+       
+    }
+    .box2-info p{
+       max-width: 350px;
+        margin-top: 30px;
+        margin-right: 30px;
+        font-size: 16px;
+        text-indent: 30px;
+        text-align: justify;
+        letter-spacing: 0.1px;
     }
 }
 

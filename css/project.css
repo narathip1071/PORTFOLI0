@@ -72,35 +72,6 @@ nav a.active,nav a:hover{
 #check{
     display: none;
 }
-/* ------------------------------------------------------- */
-/* .minibar{
-    padding: 15vh 50px 10px ;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    z-index: 9999;
-    
-}
-.minibar-con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5vh; /* ระยะห่างระหว่างกล่อง 
-} */
-/* .boxbar {
-    width: 100px;
-    height: 100px;
-    /* border: 2px solid #fff; 
-    color:#fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s, transform 0.3s; 
-    border-radius: 20px 20px 0px 0px;
-}
-.boxbar:hover {
-    transform: scale(1.1);  
-} */
 /* --------------------------------------------------------------------------- */
 /* en/th */
 button {
@@ -119,48 +90,6 @@ button:active{
     background-color: #000;
 }
 
-/*------------------------------------------------------------------------------------------------------------- */
-
-@media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-    /* --------------------------------------------- */
-}
-@media (max-width: 840px) {
-    .checkbtn {
-        display: block; /* แสดงปุ่ม checkbtn */
-    }
-    ul {
-        position: fixed; /* ทำให้ ul อยู่ในตำแหน่งคงที่ */
-        background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังพร้อมความโปร่งแสง */
-        top: 80px; /* ระยะห่างจากด้านบน */
-        right: 100%; /* ซ่อน ul ไว้ทางขวาของจอ */
-        margin-right: -20%; /* ขยับ ul ไปทางขวา */
-        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-        border-radius: 0 0 20px 20px; /* มุมล่างโค้งมน */
-        transition: left 0.5s ease; /* เพิ่มการเลื่อนแบบ smooth */
-    }
-    nav ul li {
-        display: block; /* แสดง li เป็นบล็อก */
-    }
-    nav ul li a {
-        font-size: 20px; /* ปรับขนาดตัวอักษร */
-    }
-    a:hover, a.active {
-        background: none; /* เอาสีพื้นหลังออก */
-        color: #0082e6; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
-    }
-    #check:checked ~ ul {
-        right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
-    }
-}
-
-/* Global Styles */
 
 
 main {
@@ -226,24 +155,6 @@ h2 {
     text-indent: 5vh;
     padding: 2vh;
 }
-
-/* Responsive Layout for Smaller Screens */
-@media (max-width: 768px) {
-    .blog-item {
-        flex: 1 1 100%; /* Stack items vertically on smaller screens */
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    h3 {
-        font-size: 2.2em;
-    }
-}
-
-/* Carousel Styling */
-
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
@@ -318,6 +229,7 @@ iframe {
     margin-top: 20px;
     width: 100%;
     max-width: 600px;
+    height:355 ;
 }
 
 /* สไตล์สำหรับ section ทั้งหมด */
@@ -336,7 +248,7 @@ iframe {
     font-size: 1.5em;
     color: #fff;
     text-align: center;
-    margin-bottom: 15px;
+    margin-top:30px;
 }
 
 /* สไตล์สำหรับข้อความ */
@@ -389,3 +301,100 @@ footer{
     text-align: center; /* จัดข้อความให้อยู่กลาง */
 
 }
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    /* --------------------------------------------- */
+}
+@media (max-width: 840px) {
+    .checkbtn {
+        display: block; /* แสดงปุ่ม checkbtn */
+    }
+    ul {
+        position: fixed; /* ทำให้ ul อยู่ในตำแหน่งคงที่ */
+        background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังพร้อมความโปร่งแสง */
+        top: 80px; /* ระยะห่างจากด้านบน */
+        right: 100%; /* ซ่อน ul ไว้ทางขวาของจอ */
+        margin-right: -20%; /* ขยับ ul ไปทางขวา */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        border-radius: 0 0 20px 20px; /* มุมล่างโค้งมน */
+        transition: left 0.5s ease; /* เพิ่มการเลื่อนแบบ smooth */
+    }
+    nav ul li {
+        display: block; /* แสดง li เป็นบล็อก */
+    }
+    nav ul li a {
+        font-size: 20px; /* ปรับขนาดตัวอักษร */
+    }
+    a:hover, a.active {
+        background: none; /* เอาสีพื้นหลังออก */
+        color: #0082e6; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+    }
+    #check:checked ~ ul {
+        right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
+    }
+}
+@media (max-width: 480px){
+    .BG-project {
+        margin-top: 90px;
+    }
+    label.logo{
+        font-size: 22px;
+        padding: 0 50px;
+        letter-spacing: 2px;
+    }
+    /* Title Section */
+    .info h3 {
+        font-size: 22px;   
+    }
+    .blog-item h2 {
+        font-size: 18px;  
+    }
+    #pos,p{
+        font-size: 15px; 
+        text-indent: 3vh;
+        padding: 0 0.5vh ;
+        text-align: justify;
+    }
+    iframe {
+        max-width: 400px;
+    }
+    .project h2 {
+        font-size: 18px; 
+        margin-top:30px;
+    }
+    
+    /* สไตล์สำหรับข้อความ */
+    .project p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #fff;
+        text-align: justify;
+        text-indent: 30px;
+    }
+   
+}
+
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .blog-item {
+        flex: 1 1 100%; /* Stack items vertically on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 2.2em;
+    }
+}
+
+

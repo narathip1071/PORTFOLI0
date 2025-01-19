@@ -76,9 +76,12 @@ margin-top: 80px;
 footer{
     margin: 0;
     padding: 0;
-}
-.footer-bottom {
-    margin-top: 0px;
+  }
+  .footer-bottom {
+    position: fixed; /* ตรึง footer ไว้กับขอบจอ */
+    bottom: 0; /* ชิดขอบด้านล่าง */
+    left: 0; /* ชิดขอบด้านซ้าย */
+    width: 100%; /* กำหนดความกว้างให้เต็มหน้าจอ */
     background-color: #303d49; /* พื้นหลังสีเข้ม */
     color: #fff; /* สีข้อความขาว */
     padding: 15px 0; /* เพิ่มช่องว่างด้านบนและล่าง */
@@ -86,7 +89,9 @@ footer{
     font-size: 14px; /* ขนาดฟอนต์ */
     border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-}
+    z-index: 1000; /* ทำให้ footer อยู่เหนือองค์ประกอบอื่น */
+  }
+  
 
 .footer-bottom p {
    
