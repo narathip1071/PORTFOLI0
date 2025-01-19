@@ -1,19 +1,4 @@
 
-@font-face {
-    font-family: "MemphisRiver";
-    src: url(fonts/MemphisRiver.ttf) format("truetype");
-  }
-  @font-face {
-    font-family: "Roblox";
-    src: url(fonts/Roblox-Font-Regular.ttf) format("truetype");
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: "Roblox";
-    src: url(fonts/Roblox-Font-Bold.ttf) format("truetype");
-    font-weight: bold;
-  }
-
 *{
     padding: 0;
     margin: 0;
@@ -177,7 +162,7 @@ button:hover {
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
-        /* padding-left: 50px; */
+        padding-left: 50px;
     }
     nav ul li a{
         font-size: 16px;
@@ -201,38 +186,40 @@ button:hover {
     
 }
 
-@media (max-width: 840px){
-    .checkbtn{
-        display: block;
+@media (max-width: 840px) {
+    .checkbtn {
+        display: block; /* แสดงปุ่ม checkbtn */
     }
-    ul{
-        position: fixed;
-        width: 20%;
-        height: 25vh;
-        /* background: #2c3e50; */
-        background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังโปร่งแสง */
-        top: 80px;
-        left: -100%;/*-100% */
-        margin-left: 80%;
-        text-align: center;
-        /* transition: .5s; */
-        border-radius: 0 0 20px 20px;
+    ul {
+        position: fixed; /* ทำให้ ul อยู่ในตำแหน่งคงที่ */
+        background: rgba(44, 62, 80, 0.8); /* สีพื้นหลังพร้อมความโปร่งแสง */
+        top: 80px; /* ระยะห่างจากด้านบน */
+        right: 100%; /* ซ่อน ul ไว้ทางขวาของจอ */
+        margin-right: -30%; /* ขยับ ul ไปทางขวา */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        border-radius: 0 0 20px 20px; /* มุมล่างโค้งมน */
+        transition: left 0.5s ease; /* เพิ่มการเลื่อนแบบ smooth */
     }
-    nav ul li{
-        display: block;
+    nav ul li {
+        display: block; /* แสดง li เป็นบล็อก */
     }
+    nav ul li a {
+        font-size: 20px; /* ปรับขนาดตัวอักษร */
+    }
+    a:hover, a.active {
+        background: none; /* เอาสีพื้นหลังออก */
+        color: #0082e6; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+    }
+    #check:checked ~ ul {
+        right: 0; /* แสดง ul ทางด้านขวาเมื่อ checkbox ถูกเลือก */
+    }
+}
 
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
 
+@media (max-width: 480px){
+    
+
+  
 /* ------------------------------------------------------ */
     .my-name-con{
         top: 350px;
@@ -265,3 +252,7 @@ button:hover {
 
 
 
+/*
+iphone 482*763 
+ipad 810*1060
+*/
