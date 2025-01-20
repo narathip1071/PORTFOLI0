@@ -90,6 +90,8 @@ footer{
     border-top: 2px solid #555; /* เส้นแบ่งด้านบน */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
     z-index: 1000; /* ทำให้ footer อยู่เหนือองค์ประกอบอื่น */
+    margin-bottom: 70px;
+   
   }
   
 
