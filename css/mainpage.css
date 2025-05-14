@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ทำให้ body มีพื้นหลังเรียบง่าย */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+
+
+
+
+  /* NAVBAR SECTION */
+header nav {
+    display: flex;
+    justify-content: space-between; /* โลโก้ซ้าย เมนูขวา */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    height: 10px; /* ปรับขนาดโลโก้ตามต้องการ */
+  }
+  
+  /* เมนูด้านขวา */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+/* รีเซ็ตเบื้องต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfb;
+    color: #2f2f2f;
+    line-height: 1.8;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3a5527;
+  }
+  
+  main p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* ส่วนเนื้อหา */
+  .content {
+    margin-bottom: 60px;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    color: #3a5527;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .content .image-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .content p {
+    font-size: 1.1rem;
+    color: #444;
+    text-align: justify;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  /* แกลเลอรี */
+  .image-gallery {
+    margin-top: 60px;
+  }
+  
+  .image-gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #3a5527;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ฟุตเตอร์ */
+  footer {
+    background-color: #3a5527;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 60px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    main h1 {
+      font-size: 2rem;
+    }
+  
+    .content h2,
+    .image-gallery h2 {
+      font-size: 1.5rem;
+    }
+  
+    main p,
+    .content p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      padding: 10px 15px;
+      font-size: 1rem;
+    }
+  }
+  

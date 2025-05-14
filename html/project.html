@@ -301,7 +301,7 @@
   <section class="project" id="tattoo-colour">
     <div class="container">
     <div class="blog-item">
-    <h2> Tattoo Colour's concert</h2>
+    <h2 id="tattooTitle"> Tattoo Colour's concert</h2>
     <p>The design and planning of the LED Strip Light installation, tailored to fit the circular metal framework and the storage space beneath the stage, must consider both aesthetics and functionality. It involves selecting LED types that provide adequate lighting and allow for color control, enhancing the mood and dimension of the performance. At the same time, attention should be given to concealing wiring and control devices within the storage space under the stage, ensuring neatness and safety. Additionally, the electrical system must be properly connected to allow for adjustable lighting effects that can change according to the performance's timing or needs, creating a visually stunning experience for the audience and leaving a memorable impression.</p>
     <!-- <p>การออกแบบและวางแผนการติดตั้ง LED Strip Light ที่เหมาะสมกับโครงเหล็กวงกลมและพื้นที่ใต้พื้นเวทีต้องพิจารณาทั้งความสวยงามและประสิทธิภาพในการใช้งาน โดยการเลือกประเภท LED ที่ให้แสงสว่างที่เพียงพอและสามารถควบคุมสีได้ตามต้องการ เพื่อเพิ่มมิติและอารมณ์ให้กับการแสดง ในขณะเดียวกัน ต้องคำนึงถึงการซ่อนสายไฟและอุปกรณ์ควบคุมในพื้นที่จัดเก็บใต้พื้นเวทีให้เรียบร้อยและปลอดภัย รวมถึงการเชื่อมต่อระบบไฟที่เหมาะสม เพื่อให้แสงไฟสามารถปรับเปลี่ยนได้ตามช่วงเวลา หรือความต้องการของการแสดง เพื่อสร้างความตื่นตาตื่นใจให้กับผู้ชมและสร้างประสบการณ์ที่น่าประทับใจ.</p> -->
     <div class="image-grid">
@@ -406,7 +406,7 @@
     
 
 <!-- แปลภาษา -->
-<script>
+<!-- <script>
   const translations = {
     "en": {
       title1: "ADHD Therapy",
@@ -434,7 +434,76 @@
     document.getElementById("description3").innerText = translations[lang].description3;
     document.getElementById("description4").innerText = translations[lang].description4;
   }
+</script> -->
+<script>
+  // ข้อมูลการแปลสำหรับภาษาอังกฤษและไทย
+  const translations = {
+    en: {
+      title1: "ADHD Therapy",
+      description1: "The development of a program called ADHD therapy was created for therapists treating ADHD children between the ages of 8 and 12. The program records information about therapists and children receiving therapy.",
+      title2: "AR Anatomy",
+      description2: "This program has been developed and designed for learning Anatomy, with a focus on three user interfaces that prioritize clarity and simplicity to prevent user errors. It is also designed to heavily emphasize the use of Augmented Reality (AR). The chosen colors aim to provide a comfortable and non-fatiguing viewing experience. Both the UI design and the AR implementation should be carefully crafted to enhance the program's usability and its effectiveness as a learning tool for Anatomy, aligning with the program's objectives.",
+      title3: "Chuanchim",
+      description3: "The Chuanchim restaurant's food ordering application will present various menus on the main page. Display the logo of 'Chuanchim' and images depicting the restaurant's ambiance. Show the main menu divided into Savory dishes, Desserts, Beverages, and Healthy options. Display a list of food and beverages in each category. Show images, menu names, prices, and brief descriptions of each item.",
+      title4: "KMUTT Sport Booking",
+      description4: "This application has been designed to address and alleviate the issues related to booking sports facilities and sports equipment at KMUTT by replacing the traditional paper sign-up with a digital application.",
+      
+      tattooTitle: "Tattoo Colour's concert",
+      tattooDesc: "The design and planning of the LED Strip Light installation, tailored to fit the circular metal framework and the storage space beneath the stage, must consider both aesthetics and functionality. It involves selecting LED types that provide adequate lighting and allow for color control, enhancing the mood and dimension of the performance...",
+      
+      s2oTitle: "S2O Songkran Music Festival",
+      s2oDesc: "The design and planning of the LED Strip Light installation must consider the number of strips to be placed and the distance between them to ensure even light distribution and suitability for the event space...",
+      
+      gCircuitTitle: "G-circuit Songkran Festival 2024",
+      gCircuitDesc: "The control, testing, and inspection of the LED lighting system, including 4 types: Disco light, LED ball, LED tube, and Kinetic ring, consist of: Control of Installation, Testing, System Inspection...",
+      
+      jeffSaterTitle: "Jeff Satur's concert",
+      jeffSaterDesc: "For the installation of 4 Avatar trees for a concert, using LED Strip Lights of various lengths tailored to the characteristics of each tree, the goal is to achieve a visually appealing and striking result...",
+      
+      sunTitle: "Here Comes the S.U.N.",
+      sunDesc: "Install LED Ball and control the lighting scene during the event.",
+      
+      winMethawinTitle: "Win Metawin's concert",
+      winMethawinDesc: "Plan the installation and control of LED Ball and LED Tube for the VTR filming during the concert."
+    },
+    th: {
+      title1: "การบำบัด ADHD",
+      description1: "การพัฒนาโปรแกรมที่ชื่อว่า ADHD Therapy ได้รับการออกแบบมาสำหรับนักบำบัดที่รักษาเด็กที่มีภาวะสมาธิสั้น (ADHD) อายุระหว่าง 8 ถึง 12 ปี โปรแกรมนี้ใช้สำหรับบันทึกข้อมูลเกี่ยวกับนักบำบัดและเด็กที่ได้รับการบำบัด",
+      title2: "กายวิภาคศาสตร์ AR",
+      description2: "โปรแกรมนี้ได้รับการพัฒนาและออกแบบมาเพื่อการเรียนรู้วิชากายวิภาค โดยเน้นการใช้งานอินเทอร์เฟซที่ชัดเจนและเรียบง่ายเพื่อป้องกันข้อผิดพลาดของผู้ใช้ และเน้นการใช้เทคโนโลยีความจริงเสริม (AR) เป็นหลัก การเลือกสีมีจุดประสงค์เพื่อให้การดูสบายตาและไม่ทำให้รู้สึกเมื่อยล้า การออกแบบ UI และการใช้ AR ได้รับการดูแลอย่างดีเพื่อเพิ่มความสะดวกในการใช้งานและประสิทธิภาพของโปรแกรม",
+      title3: "ชวนชิม",
+      description3: "แอปพลิเคชันสั่งอาหารของร้านชวนชิมจะแสดงเมนูต่าง ๆ บนหน้าหลัก โดยมีโลโก้ของ 'ชวนชิม' และภาพที่แสดงบรรยากาศของร้าน เมนูหลักจะถูกแบ่งออกเป็น อาหารคาว ขนมหวาน เครื่องดื่ม และอาหารเพื่อสุขภาพ แสดงรายการอาหารและเครื่องดื่มในแต่ละหมวดหมู่ พร้อมภาพประกอบ ชื่อเมนู ราคา และคำอธิบายสั้น ๆ",
+      title4: "การจองสนามกีฬา KMUTT",
+      description4: "แอปพลิเคชันนี้ได้รับการออกแบบมาเพื่อแก้ปัญหาที่เกี่ยวข้องกับการจองสนามกีฬาและอุปกรณ์กีฬาในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT) โดยแทนที่การลงชื่อจองในรูปแบบกระดาษด้วยระบบแอปพลิเคชันดิจิทัล",
+      
+      tattooTitle: "คอนเสิร์ต Tattoo Colour",
+      tattooDesc: "การออกแบบและวางแผนการติดตั้ง LED Strip Light ที่เหมาะสมกับโครงเหล็กวงกลมและพื้นที่ใต้พื้นเวทีต้องพิจารณาทั้งความสวยงามและประสิทธิภาพในการใช้งาน...",
+      
+      s2oTitle: "เทศกาลดนตรี S2O Songkran",
+      s2oDesc: "การออกแบบและจัดทำแผนการติดตั้ง LED Strip Light ต้องคำนึงถึงจำนวนที่ต้องวางและระยะห่างระหว่างแถบแสงเพื่อให้แสงกระจายอย่างสม่ำเสมอและเหมาะสมกับพื้นที่จัดงาน...",
+      
+      gCircuitTitle: "เทศกาล Songkran G-circuit 2024",
+      gCircuitDesc: "การควบคุม, ทดสอบ และตรวจสอบระบบไฟ LED 4 ประเภท ได้แก่ Disco light, LED ball, LED tube, และ Kinetic ring...",
+      
+      jeffSaterTitle: "คอนเสิร์ต Jeff Satur",
+      jeffSaterDesc: "ในการติดตั้งต้นไม้ AVATAR 4 ต้นสำหรับคอนเสิร์ต โดยใช้ LED Strip Light ความยาวหลายขนาดที่เหมาะสมกับลักษณะของต้นไม้แต่ละต้น...",
+      
+      sunTitle: "Here Comes the S.U.N.",
+      sunDesc: "ติดตั้ง LED Ball และควบคุมการแสดง Scene ไฟในงาน",
+      
+      winMethawinTitle: "คอนเสิร์ต Win Metawin",
+      winMethawinDesc: "วางแผนติดตั้งและควบคุม LED Ball และ LED Tube ในการถ่าย VTR สำหรับคอนเสิร์ต"
+    }
+  };
+
+  // ฟังก์ชันในการสลับภาษา
+  function setLanguage(lang) {
+    for (const [key, value] of Object.entries(translations[lang])) {
+      document.getElementById(key).innerText = value;
+    }
+  }
 </script>
+
 <!-- ------------- -->
 </body>
 </html>
